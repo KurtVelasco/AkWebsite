@@ -1,0 +1,17 @@
+.searched-item-container{
+    margin-top: 80px;
+}
+#searched-item{
+    position: absolute;
+    opacity: 0; 
+    right: 0; 
+  } 
+#searched-item.show{
+    opacity: 1; 
+    left: 5%; /*  Final Position of the Character image */
+    animation: slide-in 0.5s ease-in-out; 
+  }
+  @keyframes slide-in {
+    from { left: -100%; } /*  where the picture spawns from, I think? */
+    to { left: 5%; }/*  position of the pic where it will move*/
+  }
