@@ -1,0 +1,103 @@
+.entire-web{
+  background: url(website-backgrounds/amiya.png)  center center fixed;
+  background-size: cover;
+  
+}
+
+.top-bar{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-bar-search{
+  display: flex;
+  margin-bottom: 0px;
+}
+
+#search-bar{
+  display: flex;
+  align-items: center;  
+  padding: 6px; 
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 300px;
+  opacity: 70%;
+}
+#icon-search{
+  margin-right: 10px;
+}
+#search-button{
+  padding: 7px 30px; /* increase padding to resize the button */
+  border: white;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  font-size: 13px; /* increase font-size to resize the button */
+  cursor: pointer; 
+  opacity: 70%;
+}
+/* RIGHTSIDE */
+.right-bar-music{
+  display: flex;
+  margin-bottom: 0px;
+}
+#music-list-dropdown{
+  display: flex;
+  align-items: center;  
+  padding: 6px; 
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 200px;
+  opacity: 70%;
+}
+#play-music{
+  padding: 3px 30px; 
+  border: white;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  font-size: 13px; 
+  cursor: pointer; 
+  margin-right: 10px;
+  opacity: 70%;
+}
+#play-music:active {
+  background-color: #999;
+}
+/* Character Select */
+
+#searched-item{
+  position: absolute;
+  opacity: 0; 
+  right: 0; 
+  transition: opacity 0.5s ease-in-out
+} 
+#searched-item.show{
+  opacity: 1; 
+  left: 10%; /*  Final Position of the Character image */
+  animation: slide-in 0.5s ease-in-out; 
+}
+@keyframes slide-in {
+  from { left: -100%; } /*  where the picture spawns from, I think? */
+  to { left: 10%; }/*  position of the pic where it will move*/
+}
+/* About Part*/
+#about-button{
+  padding: 3px 30px; 
+  border: white;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  font-size: 13px; 
+  cursor: pointer; 
+  margin-right: 10px;
+}
