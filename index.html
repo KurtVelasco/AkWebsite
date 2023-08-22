@@ -5,6 +5,7 @@
         <link rel="stylesheet"  type="text/css" href ="./css/mainHub/main-topBar.css"/>
         <link rel="stylesheet" type="text/css" href ="./css/mainHub/main.css"/>
         <link rel="stylesheet" type="text/css" href ="./css/mainHub/main-hoverButton.css"/>
+        <script src="https://www.youtube.com/iframe_api"></script>
     </head>
 
     <!---id/others = camelCase // class lowercase with dash-->
@@ -23,10 +24,9 @@
 
             <div class="website-logo">
                <img src="">
-            </div> 
-            
+            </div>            
             <div class="dropdown">
-              <button class="dropbtn">Arknights</button>
+              <button class="dropbtn"><h>☆Arknights</h></button>
               <div class="dropdown-content">
                 <a href="html/ytpMP3.html">youtubeLink</a>
                 <a href="#">Link 2</a>
@@ -34,51 +34,72 @@
               </div>
             </div>
             <div class="dropdown">
-              <button class="dropbtn">Dropdown</button>
+              <button class="dropbtn">☆Dropdown</button>
               <div class="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
               </div>
             </div>
-            
-            
-        </div>   
+
+            <form class="music-player">                 
+              <select id="music-list-dropdown">
+                <option value="" selected disabled>♫ Select a song...</option>
+                <option value="https://vgmsite.com/soundtracks/blue-archive-gamerip/pgcasqoumy/07%20Mitsukiyo%2005%20Unwelcome%20School.mp3">Welcome School</option>
+                <option value="https://vgmsite.com/soundtracks/library-of-ruina-official-soundtrack/oaosuzuwns/01.%20Theme.mp3">Library</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <button id="play-music" type="button" onClick="selectMusic()">Music</button>        
+            </form>
+        </div>
         
 
         
-
-
         <div class="slider-container">
             <div class="picture-slider-1">
-              <h1 class="slider-desc">PROGRESS</h1>
+              <h1 class="slider-desc">ACTUAL INSANE</h1>
               <button class="slider-button left-button" onclick="slideLeft()">&#8249;</button>
               <button class="slider-button right-button" onclick="slideRight()">&#8250;</button>
               <div class="image-container">
                 <img src="https://storage.modworkshop.net/users/images/uaTtAcGmvIXN2mHRMXjrSS1TYmOpDO8aRYHR0jmp.webp" />
-                <img src="https://i.redd.it/9n8nz9iykyy71.png" />
-                <img src="https://static.tvtropes.org/pmwiki/pub/images/fgo_rate_up_1.PNG" />           
+                <img src="https://64.media.tumblr.com/ea6800782fed7e02ecc1c310060cbf5c/fe3f75bc2d9ba92e-b3/s1280x1920/a6044d2ce9ed1b9294bfae6c22b0c4ecfde79697.png" />
+                <img src="https://i.kym-cdn.com/photos/images/original/001/948/770/038.jpg" />           
               </div>         
             </div>
     
             <div class="picture-slider-2">
-              <h1 class="slider-desc">PROGRESS</h1>
+              <h1 class="slider-desc">0SANITY</h1>
               <button class="slider-button-2 left-button" onclick="slideLeft()">&#8249;</button>
               <button class="slider-button-2 right-button" onclick="slideRight2()">&#8250;</button>
               <div class="image-container-2">
-                <img src="https://media.tenor.com/MZvzZySG49EAAAAC/don-quixote-skill-issue-don-quixote-limbus-company.gif" />
-                <img src="https://preview.redd.it/5vqmrq4yq5gb1.png?width=960&crop=smart&auto=webp&s=6a4036cc04bca6b6515963fa627fbeb63801384b" />
-                <img src="https://i.redd.it/6fp4q4w71ara1.png" />           
+                <img src="https://media.tenor.com/r5bQbZlI0JcAAAAC/charon-limbus-company.gif" />
+                <img src="https://i.redd.it/9n8nz9iykyy71.png" />
+                <img src="https://pbs.twimg.com/media/FroRcsxacAEp9U3.jpg" />            
               </div>         
             </div>
         </div>
-
-       
+        <div class="news-ticker">
+          <ul>
+            <li><img src="image1.jpg" alt="News 1"></li>
+            <li>News 2</li>
+            <li>News 3</li>
+            <li>News 4</li>
+            <li>News 5</li>
+          </ul>
+        </div>
+        <div class="footer" >
+          <div id="footer-desc">
+            <h id="footer-desc">@Kritzkingvoid - Kurt Francis Velasco</h>
+          </div>
+          
+     
+        </div>
+        
         
         <script src ="./script/mainHub/app.js"></script>
         <script src ="./script/mainHub/windowSlider.js"></script>
     </body>
-
+    
 
 
 </html>

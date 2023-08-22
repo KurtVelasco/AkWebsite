@@ -15,5 +15,8 @@
   object-fit: cover;
   z-index: -1;
 }
-
+.image2{
+  position: absolute;
+  margin-top: 20px;
+}
 

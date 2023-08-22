@@ -4,16 +4,11 @@ const imageContainer2 = document.querySelector('.image-container-2');
 let rightValue2 = parseInt(imageContainer.style.right) || 0; 
 
 
-function jukeBox() {
-  audio = document.getElementById("music-player");
-  if (audio.paused) {// set the src attribute before playing
-    audio.src = musicName;
-    audio.play();
-  } else { 
-    audio.pause();
-  }
-}
+
 setInterval(slideRight2, 6000);
+//Currently only for image container 2
+//and the image containter 2 should be applied later
+
 function slideRight2() {
   if(rightValue2 + 300 > 600){
     rightValue2 = -300;
