@@ -1,0 +1,32 @@
+.enemy-sprite{
+    margin-top: 100px;
+    margin-left: 10%;
+    position: relative;
+}
+.character-sprite1{
+    position: absolute;
+    
+}
+.character-sprite2{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 27%;
+}
+.character-sprite3{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 18%;
+    opacity: 1;
+}
+.character-sprite4{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 8%;
+    opacity: 1;
+}
+.character-sprite5{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 20%;
+    opacity: 1;
+}

@@ -16,3 +16,14 @@ function selectMusic() {
   musicName = dropdown.value;
   jukeBox();
 }
+
+function jukeBox() {
+  audio = document.getElementById("music-player");
+  if (audio.paused) {// set the src attribute before playing
+    audio.src = musicName;
+    var select = document.getElementById
+    audio.play();
+  } else { 
+    audio.pause();
+  }
+}
