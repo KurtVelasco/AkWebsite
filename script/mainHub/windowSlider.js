@@ -5,6 +5,7 @@ let rightValue2 = parseInt(imageContainer.style.right) || 0;
 
 
 
+
 setInterval(slideRight2, 6000);
 //Currently only for image container 2
 //and the image containter 2 should be applied later
@@ -44,3 +45,32 @@ function slideLeft() {
   }
 
 }
+
+
+// Will change from function()  not for lamba
+
+const newsSingleAll = document.querySelectorAll(".news-container .news-single");
+
+let currentActive = 0;
+let totalNews = newsSingleAll.length;
+let duration = 3000;
+
+
+const removeAllActive = () => {
+  newsSingleAll.forEach((n) => {
+    n.classList.remove("active");
+  });
+};
+
+const changeNews = () => {
+  if (currentActive >= totalNews - 1) {
+    currentActive = 0;
+  } else {
+    currentActive += 1;
+  }
+
+  removeAllActive();
+  newsSingleAll[currentActive].classList.add("active");
+};
+
+setInterval(changeNews, duration);

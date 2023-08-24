@@ -13,6 +13,9 @@
     position: relative;
     display: inline-block;
   }
+  .dropdown button {
+    font-family: sans-serif;
+  }
   
   .dropdown-content {
     display: none;
