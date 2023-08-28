@@ -1,24 +1,55 @@
-
-/* Loading ^ */
-.entire-web{
-  background: url() center center fixed;
-  background-size: cover;
-
+.entire-web {
+  background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/ui/back_img_2.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover  ;
+  
+  /* animation: imageTransition 25s infinite; */
 }
 
+@keyframes imageTransition {
+  0% {
+    background-image: url(https://re1999.bluepoch.com/img/backstory/bg.png);
+  }
+  25% {
+    background-image: url(https://re1999.bluepoch.com/cbt/en/assets/img/p1/BG1.jpg);
+  }
+  50% {
+    background-image: url(https://gamecms-res.sl916.com/official_website_resource/50001/4/PICTURE/20230328/9%20%E6%9A%B4%E9%9B%A8%E5%89%8D%E5%A4%95-2560x1440_0dce030d1a704a4b94a194d8bf03f02c.jpg);
+  }
+  75% {
+    background-image:url(//gamecms-res.sl916.com/official_website_resource/50001/4/PICTURE/20230712/26%202560x1440_f1d239bf9a2a4f47ab9e57f21e3d56c0.jpg);
+  }
+  100% {
+    background-image: url(https://re1999.bluepoch.com/img/backstory/bg.png);
+  }
+}
 
 #bg-video {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  transition: opacity 0.5s ease;
 }
-.image2{
+
+/* Miidle Ground */   
+
+#searched-item{
   position: absolute;
-  margin-top: 20px;
+  opacity: 0; 
+  left: 10%; 
+  transition: opacity 0.5s ease-in-out
+} 
+#searched-item.show{
+  opacity: 1; 
+  left: 10%; /*  Final Position of the Character image */
+  animation: slide-in 0.5s ease-in-out; 
 }
-
-
+@keyframes slide-in {
+  from { left: -100%; } /*  where the picture spawns from, I think? */
+  to { left: 10%; }/*  position of the pic where it will move*/
+}

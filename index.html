@@ -10,22 +10,18 @@
     </head>
 
     <!---id/others = camelCase // class lowercase with dash-->
-
+<!-- 
     <video id="bg-video" autoplay loop muted>
-      <source src="https://ba.vod.nexoncdn.co.kr/bg/comu.mp4" type="video/mp4">
-    </video>
+      <source src="https://re1999.bluepoch.com/cbt/jp/assets/media/kvvideo.mp4" type="video/mp4">
+    </video>  -->
+    
+    
     <audio id="music-player" >
         <source src="" type="audio/mp3">
-    </audio>
-    
-    
+    </audio>   
     <body class="entire-web">  
-         
+        
         <div class="main-top-bar">
-
-            <div class="website-logo">
-               <img src="web-elem/Capture.PNG" height="50" width="100">
-            </div>            
             <div class="dropdown">
               <button class="dropbtn"><h>MENU </h></button>
               <div class="dropdown-content">
@@ -42,7 +38,6 @@
                 <a href="#">Link 3</a>
               </div>
             </div>
-
             <form class="music-player">                 
               <select id="music-list-dropdown">
                 <option value="" selected disabled>♫ Select a song...</option>
@@ -50,53 +45,57 @@
                 <option value="https://vgmsite.com/soundtracks/library-of-ruina-official-soundtrack/oaosuzuwns/01.%20Theme.mp3">Library</option>
                 <option value="option3">Option 3</option>
               </select>
-              <button id="play-music" type="button" onClick="selectMusic()">♫ </button>        
+              <button id="play-music" type="button" onClick="selectMusic()">♫ </button>                
             </form>
         </div>
         
-
+        <div id="icon-box">
+          <button onclick="selectMusic()" target="_blank"  class="icon icon-1" ></button>
+          <button onclick="searchOperator()" target="_blank"  class="icon icon-2" ></button>
+          <a href="https://www.youtube.com/watch?v=_39xugMDaYQ" target="_blank"  class="icon icon-3" ></a>
+          <a href="https://github.com/KurtVelasco" title="Github" target="_blank"  class="icon icon-4" ></a>
+        </div>
+      
+        <div class="searched-item-container">
+          <img id="searched-item" src="/" height="800">
+        </div>
   
-          <div class="slider-container">
-
+        <div class="slider-container">   
             <div class="picture-slider-1">
               <h1 class="slider-desc">ACTUAL INSANE</h1>
               <button class="slider-button left-button" onclick="slideLeft()">&#8249;</button>
-              <button class="slider-button right-button" onclick="slideRight()">&#8250;</button>
+              <button class="slider-button right-button" onclick="slideRight()">&#8250;</button>   
+  
               <div class="image-container">
                 <img src="https://storage.modworkshop.net/users/images/uaTtAcGmvIXN2mHRMXjrSS1TYmOpDO8aRYHR0jmp.webp" />
                 <img src="https://64.media.tumblr.com/ea6800782fed7e02ecc1c310060cbf5c/fe3f75bc2d9ba92e-b3/s1280x1920/a6044d2ce9ed1b9294bfae6c22b0c4ecfde79697.png" />
                 <img src="https://i.kym-cdn.com/photos/images/original/001/948/770/038.jpg" />           
-              </div>         
-            </div>
-    
-            <div class="picture-slider-2">
-              <h1 class="slider-desc">0SANITY</h1>
-              <button class="slider-button-2 left-button" onclick="slideLeft()">&#8249;</button>
-              <button class="slider-button-2 right-button" onclick="slideRight2()">&#8250;</button>
+              </div> 
+                       
+            </div>  
+            <div class="picture-slider-1">
+              <h1 class="slider-desc">0SANITY</h1>             
+              <button class="slider-button left-button" onclick="slideLeft()">&#8249;</button>
+              <button class="slider-button right-button" onclick="slideRight2()">&#8250;</button>
+              <div class="page-number-holder">
+                <h1 class="page-number-1">1/3</h1>
+              </div>    
               <div class="image-container-2">
                 <img src="https://media.tenor.com/r5bQbZlI0JcAAAAC/charon-limbus-company.gif" />
                 <img src="https://i.redd.it/9n8nz9iykyy71.png" />
                 <img src="https://pbs.twimg.com/media/FroRcsxacAEp9U3.jpg" />            
               </div>         
             </div>
+          
+        </div>
 
-         </div>
-
-      
-  
-        <div class="footer" >          
-          <div class="website-logo">
-            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/arknights/8/86/%E9%98%B5%E8%90%A5-%E8%8E%B1%E8%8C%B5%E7%94%9F%E5%91%BD.png?width=1280" height="40">
-          </div>
+        <div class="footer">                   
           <div class="website-logo">
             <img src="https://static.tvtropes.org/pmwiki/pub/images/general_student_council.png" height="40">
-          </div>
-           
+          </div>         
           <div id="footer-desc">
             <h id="footer-desc">© 2122 Kurt Velasco. & 0SANITY GAMES Co., Ltd. All Rights Doesn't Reserve </h>
           </div>
-
-
           <div class="news-container">     
             <div class="news-heading">NOTICE:</div>
             <div class="news">
@@ -106,10 +105,10 @@
               <a href="#" class="news-single"> Local Merchant Bought the rights for 80 Billion Leaves</a>      
               <a href="#" class="news-single">LGB won the 4chan Match thanks to Ideal</a>
             </div>  
-            <div>
-                <img class="jeanne" src="https://64.media.tumblr.com/976286d960e7035eb21dbce48069f541/tumblr_pcworvyahF1xv4d87o1_400.png" height="100"/>
-            </div>       
-          </div>
+          <div>
+              <img class="jeanne" src="https://64.media.tumblr.com/976286d960e7035eb21dbce48069f541/tumblr_pcworvyahF1xv4d87o1_400.png" height="100"/>
+          </div>       
+        </div>
 
         </div>
         

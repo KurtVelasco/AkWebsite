@@ -2,7 +2,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: rgb(99, 141, 255);}
 .dropbtn {
-    background-color: white;
+    background-color: transparent;
     color: black;
     padding: 16px;
     font-size: 16px;
@@ -15,6 +15,7 @@
   }
   .dropdown button {
     font-family: sans-serif;
+    font-size: larger;
   }
   
   .dropdown-content {
@@ -33,3 +34,36 @@
     display: block;
   }
   
+  #icon-box{
+    opacity: 1;
+    margin-top: 10%;
+    position: absolute;
+    background-color: transparent;
+  }
+  .icon-1{
+    background: url(/web-elem/supporter.png);
+  }
+  .icon-2{
+    background: url(/web-elem/specialist.png);
+  }
+  .icon-3{
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/roguelike/item/relic_101.png);
+  }
+  .icon-4{
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/roguelike/item/relic_102.png);
+  }
+  .icon:hover{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+  }
+  .icon{
+    border: 0px;
+    display: block;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    padding: 30;
+    opacity: 0.5;
+    background-color: transparent;
+  }
