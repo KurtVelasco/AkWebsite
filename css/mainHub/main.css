@@ -9,19 +9,19 @@
 
 @keyframes imageTransition {
   0% {
-    background-image: url(/web-elem/backgrounds/38_ex03.png);
+    background-image: url(/web-elem/38_ex03.png);
   }
   25% {
-    background-image: url(/web-elem/backgrounds/38_ex01.png);
+    background-image: url(/web-elem/38_ex01.png);
   }
   50% {
-    background-image: url(/web-elem/backgrounds/38_ex02.png);
+    background-image: url(/web-elem/38_ex02.png);
   }
   75% {
-    background-image:url(/web-elem/backgrounds/38_ex03.png);
+    background-image:url(/web-elem/38_ex03.png);
   }
   100% {
-    background-image: url(/web-elem/backgrounds/38_ex03.png);
+    background-image: url(/web-elem/38_ex03.png);
   }
 }
 
