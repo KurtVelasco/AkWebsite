@@ -4,24 +4,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-   animation: imageTransition 20s infinite; 
+  animation: imageTransition 25s infinite; 
 }
 
 @keyframes imageTransition {
   0% {
-    background-image: url(/web-elem/38_ex03.png);
+    background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex04.png);
   }
   25% {
-    background-image: url(/web-elem/38_ex01.png);
+    background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex01.png);
   }
   50% {
-    background-image: url(/web-elem/38_ex02.png);
+    background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex02.png);
   }
   75% {
-    background-image:url(/web-elem/38_ex03.png);
+    background-image:url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex03.png);
   }
   100% {
-    background-image: url(/web-elem/38_ex03.png);
+    background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex04.png);
   }
 }
 
