@@ -1,0 +1,156 @@
+            <form class="music-player">                 
+              <select id="music-list-dropdown">
+                <option value="" selected disabled>♫ Select a song...</option>
+                <option value="https://vgmsite.com/soundtracks/blue-archive-gamerip/pgcasqoumy/07%20Mitsukiyo%2005%20Unwelcome%20School.mp3">Welcome School</option>
+                <option value="https://vgmsite.com/soundtracks/library-of-ruina-official-soundtrack/oaosuzuwns/01.%20Theme.mp3">Library</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <button id="play-music" type="button" onClick="selectMusic()">♫ </button>                
+            </form>
+
+function selectMusic() {
+  let dropdown = document.getElementById('music-list-dropdown');
+  musicName = dropdown.value;
+  jukeBox();
+}
+
+function jukeBox() {
+  audio = document.getElementById("music-player");
+  if (audio.paused) {// set the src attribute before playing
+    audio.src = musicName;
+    var select = document.getElementById
+    audio.play();
+  } else { 
+    audio.pause();
+  }
+}
+
+            <form class="music-player">                 
+              <select id="music-list-dropdown">
+                <option value="" selected disabled>♫ Select a song...</option>
+                <option value="https://vgmsite.com/soundtracks/blue-archive-gamerip/pgcasqoumy/07%20Mitsukiyo%2005%20Unwelcome%20School.mp3">Welcome School</option>
+                <option value="https://vgmsite.com/soundtracks/library-of-ruina-official-soundtrack/oaosuzuwns/01.%20Theme.mp3">Library</option>
+                <option value="option3">Option 3</option>
+              </select>
+              <button id="play-music" type="button" onClick="selectMusic()">♫ </button>                
+            </form
+
+            .music-player{
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#music-list-dropdown{
+  padding: 10px;
+  border-color: lavender;
+  margin-right: -5;
+}
+#play-music{
+  padding: 10px;
+  background-color: white;
+  border-color: lavender;
+}
+#play-music-btn{
+  display: block;
+  height: 20px;  
+  width: 20px;
+
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .chatbox {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+      padding: 10px;
+    }
+
+    .chatbox p {
+      margin: 0;
+      padding: 5px;
+      margin: 0;
+        word-wrap: break-word;
+    }
+
+    .chatbox p.left {
+      text-align: left;
+    }
+
+    .chatbox p.right {
+      text-align: right;
+    }
+
+    .chatbox p.left .profile-pic {
+      float: left;
+      margin-right: 5px;
+    }
+
+    .chatbox p.right .profile-pic {
+      float: right;
+      margin-left: 5px;
+    }
+
+    .chatbox p.left .profile-pic img,
+    .chatbox p.right .profile-pic img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    .input-box {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbox" id="chatbox">
+    <p class="left">
+      <span class="profile-pic">
+        <img src="https://img-10.stickers.cloud/packs/9a9a4142-6d07-4962-bab6-792b72833061/webp/84d520ac-1889-4140-ad7e-705697d367c5.webp" alt="Jane's Profile Picture">
+      </span>
+      Jane: Hi there!
+    </p>
+    <p class="right">
+      You: Hello!
+      <span class="profile-pic">
+        <img src="https://storage.googleapis.com/sticker-prod/N1Dtgi2CatO2BM5IesCo/7.png" alt="Your Profile Picture">
+      </span>
+    </p>
+  </div>
+  <div class="input-box">
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      var messageInput = document.getElementById("message-input");
+      var message = messageInput.value;
+      if (message !== "") {
+        var chatbox = document.getElementById("chatbox");
+        var newMessage = document.createElement("p");
+        newMessage.textContent = "You: " + message;
+        newMessage.className = "right";
+
+        var profilePic = document.createElement("span");
+        profilePic.className = "profile-pic";
+        var img = document.createElement("img");
+        img.src = "https://storage.googleapis.com/sticker-prod/N1Dtgi2CatO2BM5IesCo/7.png";
+        img.alt = "Your Profile Picture";
+        profilePic.appendChild(img);
+
+        newMessage.appendChild(profilePic);
+        chatbox.appendChild(newMessage);
+        messageInput.value = "";
+        chatbox.scrollTop = chatbox.scrollHeight;
+      }
+    }
+  </script>
+</body>
+</html>

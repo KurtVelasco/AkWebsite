@@ -1,27 +1,28 @@
 .entire-web {
-  background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/ui/back_img_2.png); 
+  /* background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex04.png);  */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover  ;
+  background-size: cover;
+  background-attachment: fixed;
   
-  /* animation: imageTransition 25s infinite; */
+   animation: imageTransition 20s infinite; 
 }
 
 @keyframes imageTransition {
   0% {
-    background-image: url(https://re1999.bluepoch.com/img/backstory/bg.png);
+    background-image: url(/web-elem/backgrounds/38_ex03.png);
   }
   25% {
-    background-image: url(https://re1999.bluepoch.com/cbt/en/assets/img/p1/BG1.jpg);
+    background-image: url(/web-elem/backgrounds/38_ex01.png);
   }
   50% {
-    background-image: url(https://gamecms-res.sl916.com/official_website_resource/50001/4/PICTURE/20230328/9%20%E6%9A%B4%E9%9B%A8%E5%89%8D%E5%A4%95-2560x1440_0dce030d1a704a4b94a194d8bf03f02c.jpg);
+    background-image: url(/web-elem/backgrounds/38_ex02.png);
   }
   75% {
-    background-image:url(//gamecms-res.sl916.com/official_website_resource/50001/4/PICTURE/20230712/26%202560x1440_f1d239bf9a2a4f47ab9e57f21e3d56c0.jpg);
+    background-image:url(/web-elem/backgrounds/38_ex03.png);
   }
   100% {
-    background-image: url(https://re1999.bluepoch.com/img/backstory/bg.png);
+    background-image: url(/web-elem/backgrounds/38_ex03.png);
   }
 }
 
@@ -39,6 +40,7 @@
 /* Miidle Ground */   
 
 #searched-item{
+  pointer-events: none;
   position: absolute;
   opacity: 0; 
   left: 10%; 
@@ -52,4 +54,151 @@
 @keyframes slide-in {
   from { left: -100%; } /*  where the picture spawns from, I think? */
   to { left: 10%; }/*  position of the pic where it will move*/
+}
+
+/* Chat */
+
+#main-chatbox{
+  opacity: 0;
+  width: 400px;
+  height: 600px;
+  left: 10%;
+  bottom: 10%;
+  position: absolute;
+}
+#main-chatbox.show{
+  opacity: 1;
+  width: 400px;
+  height: 600px;
+  left: 10%;
+  bottom: 10%;
+  animation: slide-in 0.5s ease-in-out; 
+}
+@keyframes slide-in {
+  from {left: -100%;}
+  to {left: 10%}
+}
+
+#main-chatbox .header-title{
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+#main-chatbox .main-inputbox{
+  height: 50px;
+  width: 400px;
+  border-radius: 0px 0px 10px 11px;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  align-items: center;
+}
+#main-chatbox .header-title button{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+}
+
+#main-chatbox .header-title h{ 
+  font-family: monospace;
+  color: white;  
+  margin-left: 10px;
+}
+
+.chatbox {
+  width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: rgb(61, 61, 61);
+
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.message .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message .message-content {
+  padding: 10px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  max-width: 80%;
+  background-color: rgb(39, 46, 87);
+  color: white;
+  font-family: monospace;
+}
+
+.user-message {
+  flex-direction: row-reverse;
+}
+
+.bot-message .message-content {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  font-family: monospace;
+}
+
+.input-box {
+  width: 400px;
+  margin-left: 10px;
+}
+
+.input-box input {
+  width: 80%;
+  padding: 8px;
+  border: 0px;
+  border-radius: 5px;
+}
+.input-box button {
+  height:32px;
+  border-radius: 5px;
+  border: 0px;
+}
+/*  Loading */
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loading-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #888;
+  border-top-color: #333;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Hide the loading screen when content is loaded */
+.content-loaded #loading-screen {
+  display: none;
 }

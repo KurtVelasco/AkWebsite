@@ -3,7 +3,7 @@ let audio
 
 
 function searchOperator() {
-  let chrImg = document.getElementById("searched-item");
+  var chrImg = document.getElementById("searched-item");
   
   if (chrImg.classList.contains("show")) {
     chrImg.classList.remove("show");
@@ -14,24 +14,25 @@ function searchOperator() {
     chrImg.classList.add("show");
   }
 }
-function selectMusic() {
-  let dropdown = document.getElementById('music-list-dropdown');
-  musicName = dropdown.value;
-  jukeBox();
-}
-
 function jukeBox() {
   audio = document.getElementById("music-player");
-  if (audio.paused) {// set the src attribute before playing
-    audio.src = musicName;
+  if (audio.paused) {   // set the src attribute before playing
+    audio.src = "https://vgmsite.com/soundtracks/lone-trail-2023/lpvpkeigvj/08.%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR%20-%20Blues%20with%20you.mp3"
     var select = document.getElementById
     audio.play();
   } else { 
     audio.pause();
   }
 }
-
-
+function openChat(){
+  var chatMsg = document.getElementById("main-chatbox");
+  if(chatMsg.classList.contains("show")){
+    chatMsg.classList.remove("show");
+  }
+  else{
+    chatMsg.classList.add("show");
+  }
+}
 var videoSources = [
   "https://re1999.bluepoch.com/countdown/data/bg-video1.mp4",
   "https://re1999.bluepoch.com/cbt/en/assets/media/kvvideo.mp4",
@@ -55,5 +56,7 @@ function changeVideo() {
     videoList.style.opacity = 1; // Fade in
   }, 500); // Delay the video source change to match the transition duration
 }
+
+
 
 //setInterval(changeVideo, 10000);

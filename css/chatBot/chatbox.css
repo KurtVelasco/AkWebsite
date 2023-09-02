@@ -1,0 +1,104 @@
+.main-chatbox{
+    opacity: 1;
+    width: 400px;
+    height: 600px;
+    left: 10%;
+}
+.main-chatbox.show{
+    opacity: 1;
+    width: 400px;
+    height: 600px;
+    left: 10%;
+    animation: slide-in 0.5s ease-in-out; 
+}
+@keyframes slide-in {
+    from {left: -100%;}
+    to {left: 10%}
+}
+
+.main-chatbox .header-title{
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.main-chatbox .main-inputbox{
+    height: 50px;
+    width: 400px;
+    border-radius: 0px 0px 10px 11px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+}
+.main-chatbox .header-title button{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+  
+.main-chatbox .header-title h{ 
+    font-family: monospace;
+    color: white;  
+    margin-left: 10px;
+}
+
+.chatbox {
+    width: 400px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: rgb(61, 61, 61);
+
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.message .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message .message-content {
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-width: 80%;
+    background-color: rgb(39, 46, 87);
+    color: white;
+    font-family: monospace;
+}
+
+.user-message {
+    flex-direction: row-reverse;
+}
+
+.bot-message .message-content {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: monospace;
+}
+
+.input-box {
+    width: 400px;
+    margin-left: 10px;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 8px;
+    border: 0px;
+    border-radius: 5px;
+}
+.input-box button {
+    height:32px;
+    border-radius: 5px;
+    border: 0px;
+}

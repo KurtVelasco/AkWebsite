@@ -1,69 +1,94 @@
-.dropdown-content a:hover {background-color: rgb(170, 189, 224);}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: rgb(99, 141, 255);}
+/* Dropdown Button */
+.dropdown-menu{
+  z-index: 1;
+}
 .dropbtn {
-    background-color: transparent;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown button {
-    font-family: sans-serif;
-    font-size: larger;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  #icon-box{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  padding: 20;
+  margin-left: 50px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.drop1{
+  background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/stage/img_stg1.png);
+}
+.drop2{
+  background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/stage/img_stg2.png);
+}
+.drop3{
+  background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/stage/img_stg3.png);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(49, 49, 49, 0.7);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  font-family:monospace;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(66, 66, 66)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  transition: all 2s ease;
+  background-size: 80%;
+}
+ 
+ 
+ 
+ #icon-box{
     opacity: 1;
-    margin-top: 10%;
+    margin-top: 5%;
     position: absolute;
-    background-color: transparent;
+  }
+  .icon-chat{
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/event/charm/trap_oxygen_3.png);
   }
   .icon-1{
-    background: url(/web-elem/supporter.png);
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/event/charm/caster_favor_out_1.png);
   }
   .icon-2{
-    background: url(/web-elem/specialist.png);
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/event/charm/defender_favor_out_1.png);
   }
   .icon-3{
-    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/roguelike/item/relic_101.png);
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/event/charm/melee_buff_def_2.png);
   }
   .icon-4{
-    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/roguelike/item/relic_102.png);
+    background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/event/charm/sniper_swimming_1.png);
   }
   .icon:hover{
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 20px;
+    background-size: 100%;
+    background-color: transparent;
+    transition: 0.25s ease-in;
   }
   .icon{
+    opacity: 0.75;
     border: 0px;
     display: block;
-    background-size: 40px;
+    background-size: 100px;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 15px;
-    padding: 30;
-    opacity: 0.5;
-    background-color: transparent;
+    margin-left: -30px;
+    padding: 40 40 70 100;
   }
