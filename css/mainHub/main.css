@@ -8,7 +8,7 @@
   }
   #bg-video{
 
-    opacity: 1;
+    opacity: 0;
   }
 
 @keyframes imageTransition {
