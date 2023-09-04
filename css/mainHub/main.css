@@ -1,11 +1,15 @@
-.entire-web {
-  /* background: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex04.png);  */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  animation: imageTransition 25s infinite; 
-}
+  .entire-web {
+    /* background: url(https://re1999.bluepoch.com/kv/1.mp4); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: imageTransition 25s infinite; 
+  }
+  #bg-video{
+
+    opacity: 1;
+  }
 
 @keyframes imageTransition {
   0% {

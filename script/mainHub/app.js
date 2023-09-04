@@ -19,9 +19,18 @@ function jukeBox() {
   if (audio.paused) {   // set the src attribute before playing
     audio.src = "https://vgmsite.com/soundtracks/lone-trail-2023/lpvpkeigvj/08.%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR%20-%20Blues%20with%20you.mp3"
     var select = document.getElementById
+    audio.volume = 0.5;
     audio.play();
   } else { 
     audio.pause();
+  }
+}
+function toggleBackground() {
+  var bgVideo = document.getElementById('bg-video');
+  if (bgVideo.style.opacity === '1') {
+    bgVideo.style.opacity = '0';
+  } else {
+    bgVideo.style.opacity = '1';
   }
 }
 function openChat(){
