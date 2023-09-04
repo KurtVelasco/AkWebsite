@@ -7,10 +7,8 @@
     animation: imageTransition 25s infinite; 
   }
   #bg-video{
-
     opacity: 0;
   }
-
 @keyframes imageTransition {
   0% {
     background-image: url(https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/images/38_ex04.png);
