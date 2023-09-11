@@ -63,9 +63,9 @@
   opacity: 0;
   width: 400px;
   height: 600px;
-  left: 10%;
   bottom: 10%;
   position: absolute;
+  pointer-events: none;
 }
 #main-chatbox.show{
   opacity: 1;
